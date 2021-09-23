@@ -1,1 +1,657 @@
-Hello
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>东京大学情报理工</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	text-indent: -1.7em;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+}
+.highlight-gray {
+	color: rgb(155,154,151);
+}
+.highlight-brown {
+	color: rgb(100,71,58);
+}
+.highlight-orange {
+	color: rgb(217,115,13);
+}
+.highlight-yellow {
+	color: rgb(223,171,1);
+}
+.highlight-teal {
+	color: rgb(15,123,108);
+}
+.highlight-blue {
+	color: rgb(11,110,153);
+}
+.highlight-purple {
+	color: rgb(105,64,165);
+}
+.highlight-pink {
+	color: rgb(173,26,114);
+}
+.highlight-red {
+	color: rgb(224,62,62);
+}
+.highlight-gray_background {
+	background: rgb(235,236,237);
+}
+.highlight-brown_background {
+	background: rgb(233,229,227);
+}
+.highlight-orange_background {
+	background: rgb(250,235,221);
+}
+.highlight-yellow_background {
+	background: rgb(251,243,219);
+}
+.highlight-teal_background {
+	background: rgb(221,237,234);
+}
+.highlight-blue_background {
+	background: rgb(221,235,241);
+}
+.highlight-purple_background {
+	background: rgb(234,228,242);
+}
+.highlight-pink_background {
+	background: rgb(244,223,235);
+}
+.highlight-red_background {
+	background: rgb(251,228,228);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(55, 53, 47, 0.6);
+	fill: rgba(55, 53, 47, 0.6);
+}
+.block-color-brown {
+	color: rgb(100,71,58);
+	fill: rgb(100,71,58);
+}
+.block-color-orange {
+	color: rgb(217,115,13);
+	fill: rgb(217,115,13);
+}
+.block-color-yellow {
+	color: rgb(223,171,1);
+	fill: rgb(223,171,1);
+}
+.block-color-teal {
+	color: rgb(15,123,108);
+	fill: rgb(15,123,108);
+}
+.block-color-blue {
+	color: rgb(11,110,153);
+	fill: rgb(11,110,153);
+}
+.block-color-purple {
+	color: rgb(105,64,165);
+	fill: rgb(105,64,165);
+}
+.block-color-pink {
+	color: rgb(173,26,114);
+	fill: rgb(173,26,114);
+}
+.block-color-red {
+	color: rgb(224,62,62);
+	fill: rgb(224,62,62);
+}
+.block-color-gray_background {
+	background: rgb(235,236,237);
+}
+.block-color-brown_background {
+	background: rgb(233,229,227);
+}
+.block-color-orange_background {
+	background: rgb(250,235,221);
+}
+.block-color-yellow_background {
+	background: rgb(251,243,219);
+}
+.block-color-teal_background {
+	background: rgb(221,237,234);
+}
+.block-color-blue_background {
+	background: rgb(221,235,241);
+}
+.block-color-purple_background {
+	background: rgb(234,228,242);
+}
+.block-color-pink_background {
+	background: rgb(244,223,235);
+}
+.block-color-red_background {
+	background: rgb(251,228,228);
+}
+.select-value-color-default { background-color: rgba(206,205,202,0.5); }
+.select-value-color-gray { background-color: rgba(155,154,151, 0.4); }
+.select-value-color-brown { background-color: rgba(140,46,0,0.2); }
+.select-value-color-orange { background-color: rgba(245,93,0,0.2); }
+.select-value-color-yellow { background-color: rgba(233,168,0,0.2); }
+.select-value-color-green { background-color: rgba(0,135,107,0.2); }
+.select-value-color-blue { background-color: rgba(0,120,223,0.2); }
+.select-value-color-purple { background-color: rgba(103,36,222,0.2); }
+.select-value-color-pink { background-color: rgba(221,0,129,0.2); }
+.select-value-color-red { background-color: rgba(255,0,26,0.2); }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="2d1248ad-8746-47a6-a423-2c9b0b8f3b20" class="page sans"><header><h1 class="page-title">东京大学情报理工</h1></header><div class="page-body"><blockquote id="d2d0bf2a-d861-435f-b2cf-6e0faf213b5d" class="">唯有牺牲多壮志，敢叫日月换新天。</blockquote><figure id="c141578b-95f6-4891-8940-411d57e59f33" class="image"><a href=""><img src=""/></a></figure><p id="81c018ff-4087-4e11-bd4c-fc750c8c1986" class="">当我坐在国权路全家便利店，将冒着腾腾热气的热水浇在泡面上，拧开乌龙茶，Mr.Quin 在耳边嘀嘀咕咕，时间已经来到凌晨1:06。两位发量堪忧的男生在边看书边做cheetsheet，应付着某场即将到来的考试，耳畔时而传来熟悉的全家门铃；明天，或者说几个小时之后，身后的正大将会回响“复旦复旦旦复旦，日月光华同灿烂。” 不知道昨天和我谈笑的本科室友，在虹桥飞往芝加哥的20小时长途航班上，在太平洋上空2万米的云层上，会不会恍然——但我确实是有毕业的实感了。</p><figure id="9606b487-3389-4d7b-aea1-a8f8e4d51d9a" class="image"><a href="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/IMG_8227.jpg"><img style="width:1440px" src="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/IMG_8227.jpg"/></a></figure><p id="752b3b22-2daa-4e1d-967e-379a8070745b" class="">四天前的午后，我把暂寄我出租屋的小猫“串串（因为是在B站人生一串捡的）”送去北区寝室，正下了出租车到园区大门，手机突然收到消息。我开始以为是同学给我发来入校二维码；却惊讶的发现是研究生录取名单，在仔细核对了几次之后，我终于说服自己确信，我被录取了。从2020年暑假因为疫情滞留在老家时笃定赴日留学，到后续报名零和，认识诸多热情的学长和拼搏的同学，再到自己查询相关资料和考试流程，开学忙于大四的各种课程。一路上自己一边看着保研、出国、考研、工作的同学纷纷确定去向，我要实话实话，自己反而越来越平淡——最焦急的时间段反而是大家都还在憧憬着自己不确定的未来的时候。</p><figure id="21f5d59d-8b99-4d33-b63e-dfd02226062e" class="image"><a href="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/IMG_8067.jpg"><img style="width:1080px" src="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/IMG_8067.jpg"/></a></figure><p id="548362e8-f2a6-466c-82b0-2f488f5e99e3" class="">世界在一年之间飞速变化，愈发让人在此刻回首之时，感慨岁月蹉跎。疫情、网课、中美冲突、反垄断、教培覆灭、塔利班建国。我时常感慨人生无常，一年前的自己绝不会想到今日如此；但我也时常自慰世事难料，人潮汹涌、又有几人料得当今？人生是流沙上构筑的城堡，在不确定中找到属于自己的确定。</p><p id="7e34ccfe-c075-4486-b9ca-d23fea85846d" class="">
+</p><blockquote id="bebd2b06-da6c-4c5e-8a83-0e38615d900d" class="">路在脚下</blockquote><p id="d10ac83e-2890-4067-a324-a428b9abc712" class="">
+</p><p id="dec211e8-3a9d-4732-a319-d393b61c7358" class="">最初了解日本留学的途径，是知乎上万佬等诸位学长的经验贴。于我而言，留学路上最艰难的一步，就是信念的萌芽。这里也感谢各位学长们的经验分享。我大约在2020年6月左右了解到赴日留学这一途径；在权衡之后9月下定决心明确方向；12月报名零和，联系了各位学长了解情况，也得到了很多支持和鼓励。同时，因为疫情假期呆在家，自己复习了微积分、线性代数、概率论等基础课，并初步自学了计算机组成原理、数字电路、离散数学等课程。</p><p id="f48fecc0-99b8-4b3e-a48b-00c62cbf6126" class="">下面我介绍一下具体的学习内容，攻之后备考的同学参考。这里介绍东京大学情报理工计算机科学专攻的考试情况，其他学校或者其他专业考试内容大同小异，只是我报名了这一个专业，对其他流程不甚了解。</p><p id="a823cf44-d8ab-448e-a772-f3079804f5cb" class="">【修考基本概念】</p><p id="967f4087-f76e-41c0-8085-7029fc16b8ef" class="">国内的研究生，或者英语概念下的 Master，在日本对应叫做「修士」，一般是两年学制，毕业后可以继续申请博士，所以相对应于国内的学硕或者英语概念下的 research master. 赴日留学付费较低，具体参考学校相关网站以及个人消费需求。</p><p id="768a434b-34d6-4603-a462-8cab96b1942f" class="">同时日本有「研究生」这一概念，其相当于预科研究生，需要申请并联系相关导师，主要用于本科与硕士之间的过度，虽然没有学籍，但是也可以参与到导师的实验室研究工作中，可以为提前适应研究工作以及备考修考作准备。</p><p id="66beb89a-2f77-4bb0-8879-d4a23d0e0292" class="">另外，也有部分同学会赴日参加语言学校，大多为期半年左右，也有短至3个月，在学习语言的同时获取赴日签证，同时备考。但是今年因为疫情的原因签证政策复杂，只有部分之前已经赴日参加语言学校的同学还在日本境内。</p><p id="abd53d24-761c-4a82-ae56-3c357309fc8b" class="">上面两种途径都只是修考之前的过渡手段，最终还是要通过类似国内研究生考试的形式参加「修考」才能获得入学资格，这种方式最为常见。</p><p id="fdb73124-4de6-4462-b599-4b6f3fa2c31c" class="">日本的学校也会有类似欧美的申请制入学方式，方向主要是学校英文修士项目，也有部分同学会在准备修考的同时走申请这条渠道。最初日本的申请制项目被统称为 G30，后来政府相关部门取消了统一打包的项目，各个学校的项目现在自行组织，比较著名的有东京工业大学的 IGP 项目等。「英语项目」的优势在于方便，并且可以和修考同时准备，但是各个项目分布在不同学校的网站，需要自己耐心搜集。大部分学校只需要准备托福成绩，但是东大部分专业需要GRE。</p><p id="8767f2b6-579c-408a-b907-f93740cb917e" class="">修考则是和日本以及世界各地的同学同台竞技，招收人数和报名人数都比较多，流程也比较固定。我个人只通过修考入学，没有考虑其他途径。直接通过修考入学也被称为「直考」。修考也分为「夏入试」和「冬入试」。主要录取集中在「夏入」，「冬入」只是作为补充，人数很少。</p><p id="f205c40b-afcd-4200-9502-4f22bc19e44d" class="">日本的修考要针对不同学校的不同专业单独报名，通常为了保证录取可以报3个左右的学校。报名时要考虑时间是否冲突、统一学校或者同一专业的限制政策、以及旅行签证的有效时间段。以往普通旅行签只有14天有效期，可能是参加修考的一个限制因素；但我因为疫情改为了线上考试。虽然不用飞去日本的当地，但是也有很多学校因为防疫政策或者考试要求，会强制线下考试，这样子啊国外就会错失考试机会。我只报名了一所学校，也顺利参加了线上考试；但是根据同学的描述，今年京都大学强制要求线下考试，东京工业大学中途也发布政策改为线下。</p><p id="c1eb6801-1609-4919-bb22-d740ee132cc1" class="">当决定参加修考，首先需要参考的就是目标学校目标专业的官方网站。许多学校的网站虽然会有日英双语，但是英语内容往往不足，还是建议大家至少用谷歌翻译浏览一次日语界面。</p><figure id="78bb8455-f5dc-44f1-aa4d-6506df5d0945" class="image"><a href="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/%E6%88%AA%E5%B1%8F2021-09-10_%E4%B8%8B%E5%8D%882.23.20.png"><img style="width:2880px" src="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/%E6%88%AA%E5%B1%8F2021-09-10_%E4%B8%8B%E5%8D%882.23.20.png"/></a></figure><p id="88103096-83d1-416e-8d30-e80751c81526" class="">日语中报名考试叫做「出愿」，考试流程和内容介绍叫做「入试案内」；其他还有诸多名词，需要大家耐心适应。</p><p id="745bec5e-910d-4110-a185-1aab4e8ebe19" class="">
+如果仔细阅读了「入试案内」，就不难找到历届考试题目「过去问」以及参考资料、录取人数、导师介绍等信息。例如东大情理CS：<a href="https://www.i.u-tokyo.ac.jp/edu/course/cs/admission.shtml">https://www.i.u-tokyo.ac.jp/edu/course/cs/admission.shtml</a></p><p id="f938e85d-e394-42a1-887c-c5ae976ceec2" class="">
+</p><p id="7d5930c6-b5a6-4446-a7e3-5e7bd83af943" class="">同时你需要在考试前考托福作为英语能力等凭证，日本修考已经没有单独等英语科目；托福成绩会被换算为英语分数；托业在日本也比较常用。</p><figure id="da6ad482-e7de-484a-84aa-1403ff26054e" class="image"><a href="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/%E6%88%AA%E5%B1%8F2021-09-10_%E4%B8%8B%E5%8D%882.36.53.png"><img style="width:1908px" src="%E4%B8%9C%E4%BA%AC%E5%A4%A7%E5%AD%A6%E6%83%85%E6%8A%A5%E7%90%86%E5%B7%A5%209606b48733894d7baea1a8f8e4d51d9a/%E6%88%AA%E5%B1%8F2021-09-10_%E4%B8%8B%E5%8D%882.36.53.png"/></a></figure><p id="0d46369f-ea97-4690-b695-771661f22c20" class="">考试报名一般在6月，考试在8月，主要分数学和专业课考试。数学一般一个系是同样的题目，分微积分、线性代数、概率论三大部分。日本数学比考研多微分方程，但不会很深入。</p><p id="f2037e12-0a0b-4c87-a0db-46431151c3b3" class="">下面介绍一下各个科目备考情况：</p><p id="cec157c7-3f6a-421a-b897-6ff09dc2bf85" class="">
+</p><p id="e43c379e-f8fb-4972-9dc5-035ea4c8ea2b" class="">「微积分」</p><ol type="1" id="facb0963-99ff-4b0f-883d-ab7c3fea751f" class="numbered-list" start="1"><li>同济版高等数学。不用多介绍，我高三的微积分引路人，非常适合作为入门读本。</li></ol><ol type="1" id="df5252b3-df84-4f3b-8572-0189dc5bba33" class="numbered-list" start="2"><li>复旦大学出版社，高等数学及配套习题册。大一高数课以及大二转专业用到的教材，内容比同济版要深入，优点在习题有一定难度而且很全，且有答案，适合刷题。</li></ol><ol type="1" id="6a36923b-7c00-4a5d-a76b-3f30c33f4b8b" class="numbered-list" start="3"><li>Calculus, J.Stewart，中文影印版，大四回顾相关概念以及学习英语对应词汇用的，对入门读者极其友好。</li></ol><ol type="1" id="fdadbd63-07a2-4919-88d8-1034440289ba" class="numbered-list" start="4"><li>MIT 单变量微积分。读同济高等数学当时看的课程，高中基础就可以看，入门友好。课程视频参见 <a href="https://www.bilibili.com/video/av1799108?from=search&amp;seid=12897735060238856121">https://www.bilibili.com/video/av1799108?from=search&amp;seid=12897735060238856121</a></li></ol><ol type="1" id="20abbe95-4bb9-481b-a6e7-583167445bf1" class="numbered-list" start="5"><li>MIT 多变量微积分课程。同上。</li></ol><ol type="1" id="270c88db-02da-4879-9d78-4cf326903d69" class="numbered-list" start="6"><li>网友笔记：马同学高等数学。可以作为参考用。<a href="https://www.matongxue.com/columns/">https://www.matongxue.com/columns/</a></li></ol><p id="14313ab1-858f-4d5a-94b0-72e6c24764b8" class="">
+</p><p id="9a4b64f3-f3dc-4783-a3fb-fde07821d85a" class="">「微分方程」</p><p id="173b353d-cfac-4210-874f-9060c5ca9ac7" class="">说明：微分方程属于日本考研会考查到但是国内考研较少涉及的内容；如果不是数学系本科国内课程通常较少涉及。自学的同学需要额外关注一下。 </p><ol type="1" id="ddbbf887-5a31-4462-95e5-b6bfa23e8544" class="numbered-list" start="1"><li>同济版高等数学中相应的部分。</li></ol><ol type="1" id="9c975ea2-c58c-48ab-98c1-a1604b437ec5" class="numbered-list" start="2"><li>网友的笔记：<a href="https://bookdown.org/yifei/book/ode.html#ode_note1">https://bookdown.org/yifei/book/ode.html#ode_note1</a></li></ol><ol type="1" id="24f19db0-10c4-4786-bb29-2f56e90c4e0a" class="numbered-list" start="3"><li>《常微分方程》，丁同仁，高等教育出版社。</li></ol><ol type="1" id="bb3467fe-569c-4ef9-b14d-4cc5b79f8a89" class="numbered-list" start="4"><li>Advanced Engineering Mathematics, Erwin. 书中第一部分涉及微分方程，也是我备考期间复习微分方程的主要参考。英文原版就很好。</li></ol><ol type="1" id="9ee7f171-15ba-4238-8a02-0bd890b94995" class="numbered-list" start="5"><li>《常微分方程》，王高雄，高等教育出版社。同学推荐的课本，刷题很好用。</li></ol><p id="641649af-0e14-4a46-a797-40af639f1c70" class="">
+</p><p id="fbce9fb0-6e3f-4564-a6f1-dfc07915d928" class="">「线性代数」</p><ol type="1" id="d934b096-2944-4bf1-af3d-e4a0105b17b5" class="numbered-list" start="1"><li>同济线性代数，大一入门的工科线性代数。内容浅显，但就是不求甚解。先从计算的角度初步感知线性代数是什么。</li></ol><ol type="1" id="b117068f-9b09-43f5-ad99-dd5f38d09ea7" class="numbered-list" start="2"><li>《线性代数及其应用》，机械工业出版社。我的线性代数启蒙教材，帮我第一次从理论的角度了解了线性代数。</li></ol><ol type="1" id="3a47411c-9e69-4bc1-ac36-607129adfee4" class="numbered-list" start="3"><li>MIT 18.06 可以说是线性代数最经典的入门课程，同时授课教师编写的配套教科书也非常适合修考。课程视频可以轻易找到：<a href="https://www.bilibili.com/video/BV1zx411g7gq?from=search&amp;seid=8374462340738168509&amp;spm_id_from=333.337.0.0">https://www.bilibili.com/video/BV1zx411g7gq?from=search&amp;seid=8374462340738168509&amp;spm_id_from=333.337.0.0</a> 配套教材为：Introduction to Linear Algebra, Gilbert Strang. 影印版，清华大学出版社。老爷子精心编写，与课程配套，但是很多课程没有涉及的内容会在书里有详细的介绍，习题也值得一做。东大多年考试题的原型都出自本书，例如矩阵幂等；属于修考必读书目。网友笔记：<a href="https://zhuanlan.zhihu.com/c_199686302">https://zhuanlan.zhihu.com/c_199686302</a></li></ol><ol type="1" id="2ae796e7-4c6f-44af-bdf4-1dc495533cc8" class="numbered-list" start="4"><li>Linear Algebra Done Right, 建议作为第二次读本，帮助理解许多抽象的概念。强烈推荐。一定要看英文原版。</li></ol><ol type="1" id="e3515ed6-d043-4114-8266-a19a7d7920fe" class="numbered-list" start="5"><li>辅助工具：Wolfram Alpha 在线 <a href="https://www.wolframalpha.com/">https://www.wolframalpha.com</a> 好用的大学数学计算器。帮你快速计算微积分与线性代数等题目，同时提供详细的过程。</li></ol><ol type="1" id="1b5776ba-821b-4ddb-846f-610f57eef389" class="numbered-list" start="6"><li>《数值线性代数》，北京大学出版社。如果想要了解数值计算相关内容可参考。</li></ol><p id="8a8bd9c6-1909-4a20-aeaf-8305301c3e2d" class="">
+</p><p id="667e577b-7d1f-45fd-be21-de32ed3fdfe0" class="">「概率论与数理统计」</p><ol type="1" id="f5897d30-f4ae-4c95-af68-20f3eb9407fc" class="numbered-list" start="1"><li>概率论与数理统计及习题集，峁诗松。线性代数经典教材，本科课程的参考教材，同时是本校考研统计学专业课辅导用书。其他学校的很多统计课也会采用。</li></ol><ol type="1" id="fb0abad5-9ef2-452f-a9e6-2d5bc7c96236" class="numbered-list" start="2"><li>高等数理统计，陈希孺。内容更加深入，我也没完全看完，但是学有余力还是推荐进一步研究。</li></ol><ol type="1" id="f7044764-8716-4c55-b42b-794636c09a4e" class="numbered-list" start="3"><li>A First Course in Probability, Sheldon Ross. 我的概率论入门教材，强烈推荐；国内有机械工业出版社的英文影印版。</li></ol><ol type="1" id="7e7eee8c-f8d7-46f9-bdd9-7116f2868ec0" class="numbered-list" start="4"><li>《统计计算——使用R》，机械工业出版社影印版。</li></ol><p id="a413f6d8-75ea-458c-ae09-e87d7b8b3317" class="">
+</p><p id="ff8637a2-4e5c-4ffc-9c5a-228660536eb6" class="">「机器学习/深度学习」</p><ol type="1" id="75f4485e-f940-4e49-bbe6-8077b2e59193" class="numbered-list" start="1"><li>《动手实现深度学习》，在线电子书：<a href="https://zh-v2.d2l.ai/">https://zh-v2.d2l.ai</a> 李沐老师出品，内容及其友好，我希望每个入门机器学习的同学都读一次；应该后续还有更新视频课程，有需要自行查找。</li></ol><ol type="1" id="00db586e-d2e3-4a21-a82c-e91bf2d6af60" class="numbered-list" start="2"><li>西瓜书，周志华。不用多介绍。</li></ol><ol type="1" id="9add53a2-0b23-4297-b625-6cf53ae7ec36" class="numbered-list" start="3"><li>吴恩达在线课程，不用多介绍；网友笔记：<a href="https://kyonhuang.top/Andrew-Ng-Machine-Learning-notes/#/week2">https://kyonhuang.top/Andrew-Ng-Machine-Learning-notes/#/week2</a></li></ol><ol type="1" id="c0ca7814-ad02-4db0-b8bd-3f6853e0a007" class="numbered-list" start="4"><li>《统计学习方法》，李航。不用多介绍，不过需要较强的数学功底。</li></ol><ol type="1" id="f8f27cb1-d7df-409e-9868-933c77a28539" class="numbered-list" start="5"><li>Convex Optimization, Boyd. 学ML不能不学优化，学优化不能不看 Boyd。如果感觉太长可以挑重点章节选读，但是还是建议多看几遍。中文版有清华大学出版社《凸优化》。</li></ol><p id="b7572a38-1683-4f56-b55a-1d70aa563fb0" class="">
+</p><p id="de50677c-d017-4919-8ec9-4c513cec07ae" class="">「计算机组成原理」</p><ol type="1" id="d9e9a329-dbb8-46bd-8ec8-9fb8ec3ed906" class="numbered-list" start="1"><li>Computer Organization and Design, Hardware/Software Interface. 中文版有机械工业出版社《计算机组成与设计，硬件/软件接口》，是我的第二遍复习用书。</li></ol><ol type="1" id="9fdebc4f-8bc2-4c1e-b859-17df15eeeabd" class="numbered-list" start="2"><li>Digital Design and Computer Architecture. David Money Harris. 强烈建议一读英文版，内容通俗易懂，适合初学者入门；同时会让读者有一种从晶体管设计到逻辑电路的成就感。中文版有机械工业出版社的《数字设计和计算机体系结构》。</li></ol><ol type="1" id="8341904b-e24b-4b95-ae53-86f80e903f23" class="numbered-list" start="3"><li>Computer System, A Programmer&#x27;s Perspective. 俗称 CSAPP，是我本科期间「计算机原理」一门课的参考教材。有点厚但是啃下来收获很多，最好做一下配套的 Project，其中的“拆炸弹”实验让我现在都印象深刻。中文版有机械工业出版社的《深入理解计算机系统》。</li></ol><p id="4256eab4-d564-43dd-a2e8-03a38d281797" class="">
+</p><p id="8c74fdc0-3550-4437-8253-323bb353be87" class="">「离散数学」</p><ol type="1" id="b6afed0c-52b4-4bed-aeff-5f61b20c4ff3" class="numbered-list" start="1"><li>北京大学，「离散数学」，视频课程：<a href="https://www.bilibili.com/video/BV1BW411n7gw?from=search&amp;seid=16267300671351304469">https://www.bilibili.com/video/BV1BW411n7gw?from=search&amp;seid=16267300671351304469</a> 内容密度很高，而且范围较广，要自行选择重点。</li></ol><ol type="1" id="6885de4b-1c35-47ff-a71a-84a529d9767e" class="numbered-list" start="2"><li>Applied Abstract Algebra，官方指定教材。入门教材，适合初学者。</li></ol><ol type="1" id="6ef4bf96-267c-4db2-b0dc-2dc0d8d8d936" class="numbered-list" start="3"><li>《离散数学教程》，屈婉玲，北京大学出版社。内容很全，可选择重点学习，配有配套习题。</li></ol><p id="22f5b1b8-c931-4c7e-82b7-6d93b22eaeb0" class="">
+</p><p id="5184e9e6-45f3-49ff-b44a-9b632ab92def" class="">「计算机网络」</p><ol type="1" id="d314617e-649f-4ff7-93a2-8ceb9f6ff0e8" class="numbered-list" start="1"><li>网友笔记：<a href="https://github.com/CyC2018/CS-Notes/blob/master/notes/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%20-%20%E7%9B%AE%E5%BD%95.md">https://github.com/CyC2018/CS-Notes/blob/master/notes/计算机网络 - 目录.md</a></li></ol><ol type="1" id="a9a97835-2e4a-42f1-83d9-a16178938b8d" class="numbered-list" start="2"><li>《计算机网络——自顶向下方法》，机械工业出版社中文版即可。</li></ol><p id="6ef18663-5fe2-475a-a87b-6f7eaf6e61ef" class="">
+</p><p id="8fde0cdd-8cd2-4916-b77e-2d1710bf8974" class="">「算法与数据结构」</p><ol type="1" id="48bd535f-acf7-4223-9caf-985bc32a15b1" class="numbered-list" start="1"><li>《算法导论》，不用多介绍，必读书目。</li></ol><ol type="1" id="55b60f73-d2d7-4872-8d0c-d5cc9f58d90b" class="numbered-list" start="2"><li>MIT 版 Algorithm，相对于上一本更通俗，图示化清晰，但没那么严格和全面，更适合入门。</li></ol><ol type="1" id="cd174437-4688-436f-af26-fbe7bfa2e869" class="numbered-list" start="3"><li>Leetcode 网站，刷题就完了。</li></ol><p id="19b245c6-b429-4c02-a7ed-f349145ebb78" class="">
+</p><p id="1067c054-19ac-4869-8dda-2aa71e5fa21c" class="">「英语」</p><ol type="1" id="4eeea87c-2b04-4268-b77a-d6a967e97814" class="numbered-list" start="1"><li>外刊下载网站：<a href="https://magazinelib.com/?s=economist">https://magazinelib.com/?s=economist</a> 通常我用来下载经济学人自学。</li></ol><ol type="1" id="6b9ce91f-a180-4e08-bd62-06c48f18bc49" class="numbered-list" start="2"><li>考满分，模拟做题专用。用来刷 TPO。</li></ol><ol type="1" id="57b18de8-2641-4422-b7b9-935ec7dcddf4" class="numbered-list" start="3"><li>新东方红宝书、绿宝书，背单词专用。</li></ol><p id="a88d7895-3d43-4841-a5a0-6c8fe1f1c5ec" class="">
+</p><p id="30473898-3dd6-4e54-9696-54c9b5581918" class="">「操作系统」</p><ol type="1" id="fc3cdfaf-0fc4-4567-ae9d-1637b18a0f01" class="numbered-list" start="1"><li>极简入门文章：<a href="https://mp.weixin.qq.com/s?__biz=MzkwMDE1MzkwNQ==&amp;mid=2247496009&amp;idx=1&amp;sn=c657e33146d82c90e2bf0bc8b4b0db1b&amp;source=41#wechat_redirect">https://mp.weixin.qq.com/s?__biz=MzkwMDE1MzkwNQ==&amp;mid=2247496009&amp;idx=1&amp;sn=c657e33146d82c90e2bf0bc8b4b0db1b&amp;source=41#wechat_redirect</a></li></ol><ol type="1" id="766b18ff-2f95-44d5-84aa-3f8cab5ee10d" class="numbered-list" start="2"><li>彗星书：<a href="https://pages.cs.wisc.edu/~remzi/OSTEP/">https://pages.cs.wisc.edu/~remzi/OSTEP/</a> 作者公开了线上教材，写作风格类似费曼屋里讲义，非常适合初学者进行阅读学习。</li></ol><ol type="1" id="9b959f8b-19c9-4485-a976-f0df3de79dda" class="numbered-list" start="3"><li>Operation System Concepts, Abraham，官方推荐教材。内容比较全。中文版有机械工业出版社的《操作系统概念》。</li></ol><ol type="1" id="b9c62976-208d-4476-a0b3-f5d3efb37e82" class="numbered-list" start="4"><li>《操作系统，精髓与设计原理》，机械工业出版社。</li></ol><p id="6105ef08-a8e5-45f4-a9ff-9516aa4ced2a" class="">
+</p><p id="b1600c82-5a14-4b75-91a4-416c21a8f3dc" class="">「形式语言与自动机」</p><ol type="1" id="97553188-2a44-487f-a32e-675a2f6b3b4e" class="numbered-list" start="1"><li>写得很好的个人博客: <a href="https://richardyan.site/">https://richardyan.site</a>；或者国内一些葵花宝典式教材。</li></ol><ol type="1" id="ab6e1e89-e297-4a4e-aeb8-347fe6d508e5" class="numbered-list" start="2"><li>Automata Theory, Languages, and Computation. 英文版较长，需要有一定的耐心。中文版翻译很差，而且已经绝版。我购买的中文早期版本的影印版完全看不下去。</li></ol><p id="9b1ca696-242d-411c-a293-a763b4790a69" class="">
+</p><p id="057878d5-750d-4486-8b97-291ce11ddddf" class="">其他资源：</p><p id="a1a5f8e9-d210-4820-afa5-b890e9acbbdb" class="">自学计算机科学：</p><ol type="1" id="3aa72e10-f9f3-47c7-a79a-df96d3a040a8" class="numbered-list" start="1"><li>Github上的自学资源，至少比学校上课效果好：<a href="https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md">https://github.com/keithnull/TeachYourselfCS-CN/blob/master/TeachYourselfCS-CN.md</a></li></ol><ol type="1" id="96555332-1a19-4c46-86d2-f0ce701f0b7d" class="numbered-list" start="2"><li>计算机好书推荐：<a href="https://zhuanlan.zhihu.com/p/100162242">https://zhuanlan.zhihu.com/p/100162242</a></li></ol><ol type="1" id="c53107f3-ce79-4aae-b571-d87ab77fbefd" class="numbered-list" start="3"><li>论文阅读：Paperwithcode，汇集各领域前沿论文，及其代码，同时有排名榜单。</li></ol><ol type="1" id="b4a62fc3-5dfe-43c9-92cc-4be2f5b08676" class="numbered-list" start="4"><li>《计算机科学导论》，机械工业出版社。很多时候大家虽然上课学了很多知识，但是对整个计算机常识还是不懂，或者不知道为什么要学习这些具体课程，我建议大家先阅读这本书作为整个计算机科学学习的入门，或者平时学习的课后读物。</li></ol><p id="b27c9e9a-ed8a-41b1-8493-4bacf84b1962" class="">
+</p><blockquote id="eb8c3181-21f5-44de-b869-bf042551668a" class="">&#x27;ANAΓKH</blockquote><p id="8856a47a-34ca-41ec-8c83-995aefd00ac7" class="">雨果在参观巴黎圣母院时，在两座钟楼之一的暗角墙壁上，看到手刻的“AИAΓKH”，即希腊语中“命运”一词，他感叹道：“力图窥见究竟何等痛苦的灵魂，誓要给这古老教堂的额头打上这罪恶的或者凶兆的烙印，才肯离开人世。”</p><p id="fc835697-5c7c-4620-8d95-b0a121d24028" class="">我在备考期间也有过种种怀疑和低落。回头看来已经释然。但这一路的经历确实改变了我看待人生的态度。很多时候，最难做到的就是坚定的相信自己的能力和选择。很多人将自己自我实现部分的价值错放在对他人的评价和贬低，而我们要做到的就是从在意到不屑再到无视这种评价。当在没有别人去肯定，去鼓励，没有外界反馈让你感受到自己的行动时，首先要做的就是相信自己，而不是去相信其他不了解甚至与你不想干的人。另外，要多和朋友，家人，尤其是有着相同目标的人谈谈，总会发现有着许许多多在背后支持你的人。</p><p id="65ef56f2-b66e-4d2f-829f-d61b54f34baf" class="">
+</p><p id="18b68711-8127-425a-aae2-fec03cdfd84a" class="">有志者，事竟成，百二秦关终归楚；苦心人，天不负，三千越甲可吞吴。</p><p id="43f8cf62-a2ee-4564-8ae5-12ec1a8c3e5b" class="">
+</p><p id="1ac14314-367f-4f90-b5a5-a3934bfea234" class="">日本留学相关内容推荐阅读：</p><p id="7821daa7-faba-4941-a164-91b4025ba681" class=""><a href="https://zhuanlan.zhihu.com/p/22766303">https://zhuanlan.zhihu.com/p/22766303</a></p><p id="e988d2ef-e6bf-448a-a02e-a2e1a2fb9338" class=""><a href="https://zhuanlan.zhihu.com/p/80843864">https://zhuanlan.zhihu.com/p/80843864</a></p><p id="4a7ad897-9099-4b1d-9ded-295a5242929a" class=""><a href="https://zhuanlan.zhihu.com/p/78885378">https://zhuanlan.zhihu.com/p/78885378</a></p><p id="6b6fbc85-3aa6-498e-be59-697090843dfe" class=""><a href="https://www.zhihu.com/people/l-you-l/posts">https://www.zhihu.com/people/l-you-l/posts</a></p><p id="596d91ae-2f93-4941-959a-0531541bebeb" class=""><a href="https://zhuanlan.zhihu.com/p/70038022">https://zhuanlan.zhihu.com/p/70038022</a></p><p id="6f19e67d-8d12-4ef5-a582-4f82edffdbdc" class=""><a href="https://www.zhihu.com/question/21325033/answer/19501004">https://www.zhihu.com/question/21325033/answer/19501004</a></p><p id="a2ce012a-0400-41c8-b234-1b9b55fe28bd" class=""><a href="https://zhuanlan.zhihu.com/japancs">https://zhuanlan.zhihu.com/japancs</a></p><p id="3ccac5cf-5745-45c7-a879-341d0046ac7a" class=""><a href="https://zhuanlan.zhihu.com/p/97454655">https://zhuanlan.zhihu.com/p/97454655</a></p><p id="c72d16f9-e701-4fec-a4e6-e20736978ad5" class=""><a href="https://zhuanlan.zhihu.com/p/150091367">https://zhuanlan.zhihu.com/p/150091367</a></p><p id="c77058e5-bc88-4993-aa62-39a42e670332" class=""><a href="https://zhuanlan.zhihu.com/p/81160557">https://zhuanlan.zhihu.com/p/81160557</a></p><p id="eea1d139-7454-45c7-adbf-018ceddba6d4" class=""><a href="https://zhuanlan.zhihu.com/p/105869215">https://zhuanlan.zhihu.com/p/105869215</a></p><p id="568fadc8-1567-4540-b460-b3c9a6b5bdfa" class="">
+</p></div></article></body></html>
