@@ -4,6 +4,19 @@
   
   
   <entry>
+    <title>image test</title>
+    <link href="/2022/06/21/image-test/"/>
+    <url>/2022/06/21/image-test/</url>
+    
+    <content type="html"><![CDATA[<p>本篇文章用于测试</p><p>本地图片引用 ![])(&#x2F;images&#x2F;image_test.jpg)</p>]]></content>
+    
+    
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>new</title>
     <link href="/2022/06/21/new/"/>
     <url>/2022/06/21/new/</url>
