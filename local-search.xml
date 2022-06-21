@@ -8,7 +8,7 @@
     <link href="/2022/06/21/image-test-2/"/>
     <url>/2022/06/21/image-test-2/</url>
     
-    <content type="html"><![CDATA[<p>wtf<br><img src="/image_test.jpg"><br>2<br><img src="/%5Cimage-test-2%5Cimage_test.jpg"><br>3</p><img src="/2022/06/21/image-test-2/image_test.jpg" class="" title="这是一张图片">]]></content>
+    <content type="html"><![CDATA[<p>wtf<br><img src="/image_test.jpg"><br>2<br><img src="/%5Cimage-test-2%5Cimage_test.jpg"><br>3</p><img src="/2022/06/21/image-test-2/image_test.jpg" class="" title="这是一张图片"><p>4 unsplash<br><img src="https://unsplash.com/photos/5MgNiWKKv4U"></p>]]></content>
     
     
     
