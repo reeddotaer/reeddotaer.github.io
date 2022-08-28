@@ -4,11 +4,11 @@
   
   
   <entry>
-    <title>托斯卡纳</title>
-    <link href="/2022/08/28/%E6%89%98%E6%96%AF%E5%8D%A1%E7%BA%B3/"/>
-    <url>/2022/08/28/%E6%89%98%E6%96%AF%E5%8D%A1%E7%BA%B3/</url>
+    <title>Karnaca</title>
+    <link href="/2022/08/28/Karnaca/"/>
+    <url>/2022/08/28/Karnaca/</url>
     
-    <content type="html"><![CDATA[<h1 id="镰仓、托斯卡纳与-Karnaca"><a href="#镰仓、托斯卡纳与-Karnaca" class="headerlink" title="镰仓、托斯卡纳与 Karnaca"></a>镰仓、托斯卡纳与 Karnaca</h1><p>镰仓与江之岛让我想起意大利的托斯卡纳与 Serkonos 的 Karnaca, 海风吹过绿皮电车，铁轨穿过市镇狭窄的街道，木质地板吱吱嘎嘎，夕阳透过咖啡杯一点一点下沉。</p><img src="/karnaca/karnaca4.jpg" class="[class names]" title="karnaka " alt="karnaca"><p>走在路上我总不由得感叹，想要在海边开一家咖啡厅安度余生，不知道什么时候才能安静的享受清闲。</p><p>时间一天天推着生活的车轮滚滚向前，我却不知道终点。</p><p>在镰仓高校前站听海浪拍打在沙滩，忽然一位古铜皮肤、赤裸上身的中年男人犹如游鱼乘着滑板从人群中闪过，阳光闪闪发亮，风不咸不淡。在镰仓没见到多少渔民，这里已经彻底是休闲与旅行的小城，承载着来自东京的游客洗褪一周疲惫，随心买买路旁收手工艺品店店木刻书签，在抹茶冰淇淋店门口排队聊天，抱着有些原始的手工榨柠檬水品品酸涩和清凉。木门楣下有些奔放的日本书法写在布帘上随风飘荡。</p><p>海滨小城总让我想起故乡，处处有相似的影子却又与众不同。也许是滨海人身上都或多或少渗着海风的味道。</p><p>“同题异构”，最近学到了一个新词，我觉得用在形容我心中的托斯卡纳和 Karnaca 恰如其分。</p><p>初见有一种莫名的熟悉和亲切，但是靠近又可以尝出一种不同。</p><img src="/karnaca/karnaca_map.jpg" class="[class names]" title="karnaka " alt="karnaca"><p>在海滨寻到一家地中海风格的西餐厅，独栋三层白墙小楼傍海而建，身后可以仰望依山而建的零零散散的民宅，整齐而不觉混乱，却没间都有各自的设计特点，星罗棋布消失在山脊落日余晖刻下的闪光的曲线后。另一侧海浪在日落下变得仿佛遥远起来，暗暗得沉寂下去，消失在天际淡漠的背景中渐渐远去。餐厅湖南的灯光，餐具碰撞、冰块入杯、其他食客的交谈欢笑声让人恍惚，窗外电车叮叮当当，海风吹过银铃与云，这些声响仿佛都渐渐远去。</p><blockquote class="pullquote [class]"><p>书写是在细致的刻画人的微妙的感受，但更进一步的是刻画人想象中的氛围在真实周遭世界的投影。</p></blockquote><p>从这个角度讲，镰仓是我的托斯卡纳，我的故乡。</p><p>—— 但他们都是我的可望不可及的 Karnaca.</p><p>永远的 Karnaca.</p><h1 id="Vlogger-与-Debugger"><a href="#Vlogger-与-Debugger" class="headerlink" title="Vlogger 与 Debugger"></a>Vlogger 与 Debugger</h1><p>最近刚开始认真剪辑视频，每次都是听着 Mr. Quin 絮絮叨叨拼接染色到深夜三点四点，幸亏 Quin 哥最近沉迷打牌杜绝摸鱼，每次我上传视频后还没有下播：每次我都会去直播间敲一句晚安：祝所有人好梦。</p><p>剪视频确实有点麻烦, 没几分钟的视频需要反反复复调整很多遍。暂时总结的一些初步经验是：</p><ul><li>剪辑之前看一遍所有的素材心里留个印象，每个素材几分钟到几分钟可用可以大致标记一下。</li><li>每个片段不要太短，不要钻牛角尖，先拼出大致的形状：每个片段 5-10 秒都可以。</li><li>先找 BGM 然后根据音乐节奏剪辑。</li><li>素材色调最好统一，可以先着做一个色卡把颜色基调定下，选 3-5 种基本色调。</li><li>光线差距大的素材最好不要紧邻。</li><li>不用精致调色直接拍 Cinetone 预设或者 PP0 预设就行，不用非得 Slog-3.</li><li>4K 25Hz 足够了，甚至可以尝试下 1080 P.</li><li>拍景色最好带个小三角架，运动镜头一定要有稳定器。</li></ul><p>另一个占据生活大头的最近忙的事是在写 Leetcode，最近做到 150 题左右了，有的时候发现看题目不如学习答案，自己想太久也没用。另一方面是自己能写出来不一定面试情景好用，所以很多时候要多约 Mock, 不过还在学习如何 Mock 以及和面试官去沟通。但还有一个重要的事我觉得是要坚持，每天两小时积少成多形成习惯。</p><p>希望大家都有好工作。</p>]]></content>
+    <content type="html"><![CDATA[<h1 id="镰仓、托斯卡纳与-Karnaca"><a href="#镰仓、托斯卡纳与-Karnaca" class="headerlink" title="镰仓、托斯卡纳与 Karnaca"></a>镰仓、托斯卡纳与 Karnaca</h1><p>镰仓与江之岛让我想起意大利的托斯卡纳与 Serkonos 的 Karnaca, 海风吹过绿皮电车，铁轨穿过市镇狭窄的街道，木质地板吱吱嘎嘎，夕阳透过咖啡杯一点一点下沉。</p><img src="/karnaca/karnaca4.jpg" class="[class names]" title="karnaka " alt="karnaca"><p>走在路上我总不由得感叹，想要在海边开一家咖啡厅安度余生，不知道什么时候才能安静的享受清闲。</p><p>时间一天天推着生活的车轮滚滚向前，我却不知道终点。</p><p>在镰仓高校前站听海浪拍打在沙滩，忽然一位古铜皮肤、赤裸上身的中年男人犹如游鱼乘着滑板从人群中闪过，阳光闪闪发亮，风不咸不淡。在镰仓没见到多少渔民，这里已经彻底是休闲与旅行的小城，承载着来自东京的游客洗褪一周疲惫，随心买买路旁收手工艺品店店木刻书签，在抹茶冰淇淋店门口排队聊天，抱着有些原始的手工榨柠檬水品品酸涩和清凉。木门楣下有些奔放的日本书法写在布帘上随风飘荡。</p><img src="/karnaca/karnaca.jpg" class="[class names]" title="karnaka " alt="karnaca"><p>海滨小城总让我想起故乡，处处有相似的影子却又与众不同。也许是滨海人身上都或多或少渗着海风的味道。</p><p>“同题异构”，最近学到了一个新词，我觉得用在形容我心中的托斯卡纳和 Karnaca 恰如其分。</p><p>初见有一种莫名的熟悉和亲切，但是靠近又可以尝出一种不同。</p><img src="/karnaca/karnaca_map.jpg" class="[class names]" title="karnaka " alt="karnaca"><p>在海滨寻到一家地中海风格的西餐厅，独栋三层白墙小楼傍海而建，身后可以仰望依山而建的零零散散的民宅，整齐而不觉混乱，却没间都有各自的设计特点，星罗棋布消失在山脊落日余晖刻下的闪光的曲线后。另一侧海浪在日落下变得仿佛遥远起来，暗暗得沉寂下去，消失在天际淡漠的背景中渐渐远去。餐厅湖南的灯光，餐具碰撞、冰块入杯、其他食客的交谈欢笑声让人恍惚，窗外电车叮叮当当，海风吹过银铃与云，这些声响仿佛都渐渐远去。</p><blockquote class="pullquote [class]"><p>书写是在细致的刻画人的微妙的感受，但更进一步的是刻画人想象中的氛围在真实周遭世界的投影。</p></blockquote><p>从这个角度讲，镰仓是我的托斯卡纳，我的故乡。</p><p>—— 但他们都是我的可望不可及的 Karnaca.</p><p>永远的 Karnaca.</p><h1 id="Vlogger-与-Debugger"><a href="#Vlogger-与-Debugger" class="headerlink" title="Vlogger 与 Debugger"></a>Vlogger 与 Debugger</h1><p>最近刚开始认真剪辑视频，每次都是听着 Mr. Quin 絮絮叨叨拼接染色到深夜三点四点，幸亏 Quin 哥最近沉迷打牌杜绝摸鱼，每次我上传视频后还没有下播：每次我都会去直播间敲一句晚安：祝所有人好梦。</p><p>剪视频确实有点麻烦, 没几分钟的视频需要反反复复调整很多遍。暂时总结的一些初步经验是：</p><ul><li>剪辑之前看一遍所有的素材心里留个印象，每个素材几分钟到几分钟可用可以大致标记一下。</li><li>每个片段不要太短，不要钻牛角尖，先拼出大致的形状：每个片段 5-10 秒都可以。</li><li>先找 BGM 然后根据音乐节奏剪辑。</li><li>素材色调最好统一，可以先着做一个色卡把颜色基调定下，选 3-5 种基本色调。</li><li>光线差距大的素材最好不要紧邻。</li><li>不用精致调色直接拍 Cinetone 预设或者 PP0 预设就行，不用非得 Slog-3.</li><li>4K 25Hz 足够了，甚至可以尝试下 1080 P.</li><li>拍景色最好带个小三角架，运动镜头一定要有稳定器。</li></ul><p>另一个占据生活大头的最近忙的事是在写 Leetcode，最近做到 150 题左右了，有的时候发现看题目不如学习答案，自己想太久也没用。另一方面是自己能写出来不一定面试情景好用，所以很多时候要多约 Mock, 不过还在学习如何 Mock 以及和面试官去沟通。但还有一个重要的事我觉得是要坚持，每天两小时积少成多形成习惯。</p><p>希望大家都有好工作。</p>]]></content>
     
     
     
@@ -99,7 +99,7 @@
     <link href="/2022/06/21/image-test-2/"/>
     <url>/2022/06/21/image-test-2/</url>
     
-    <content type="html"><![CDATA[<p>wtf<br>1<br><img src="/2022/06/21/image-test-2/image_test.jpg"><br>2<br><img src="/%5Cimage-test-2%5Cimage_test.jpg"><br>3</p><img src="/2022/06/21/image-test-2/image_test.jpg" class="" title="这是一张图片"><p>4 unsplash<br><img src="https://unsplash.com/photos/5MgNiWKKv4U"></p><p>5 unsplash2<br><img src="https://images.unsplash.com/photo-1655573001586-c1a9e3f23fd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80"></p>]]></content>
+    <content type="html"><![CDATA[<p>wtf<br>1<br><img src="/image_test.jpg"><br>2<br><img src="/%5Cimage-test-2%5Cimage_test.jpg"><br>3</p><p>4 unsplash<br><img src="https://unsplash.com/photos/5MgNiWKKv4U"></p><p>5 unsplash2<br><img src="https://images.unsplash.com/photo-1655573001586-c1a9e3f23fd5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2938&q=80"></p>]]></content>
     
     
     
@@ -147,11 +147,11 @@
   
   
   <entry>
-    <title>article</title>
-    <link href="/2022/06/21/article/"/>
-    <url>/2022/06/21/article/</url>
+    <title>Hello World</title>
+    <link href="/2022/06/21/hello-world/"/>
+    <url>/2022/06/21/hello-world/</url>
     
-    <content type="html"><![CDATA[]]></content>
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
     
     
     
@@ -160,11 +160,11 @@
   
   
   <entry>
-    <title>Hello World</title>
-    <link href="/2022/06/21/hello-world/"/>
-    <url>/2022/06/21/hello-world/</url>
+    <title>article</title>
+    <link href="/2022/06/21/article/"/>
+    <url>/2022/06/21/article/</url>
     
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    <content type="html"><![CDATA[]]></content>
     
     
     
